@@ -7,7 +7,6 @@ import { FeedbackContentStep } from './Steps/FeedbackContentStep';
 import { FeedbackSuccessStep } from './Steps/FeedbackSuccessStep';
 import { FeedbackTypeStep } from './Steps/FeedbackTypeStep';
 
-
 export const feedbackTypes = {
     BUG: {
         title: 'Problema',
@@ -35,7 +34,7 @@ export const feedbackTypes = {
 
 export type FeedbackType = keyof typeof  feedbackTypes; //Criar type c/ base nas chaves do objeto feedbackTypes
 
-export function WidgetFrom () {
+export function WidgetForm () {
     const [feedbackType, setFeedbackType] = useState<FeedbackType | null>(null);
     const [feedbackSent, setFeedbackSent] = useState<boolean>(false);
 
