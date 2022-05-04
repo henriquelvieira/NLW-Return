@@ -2,13 +2,13 @@ import { SubmitFeedbackUseCase } from "./submit-feedback-use-case";
 
 describe('Submit feedback', () => {
 
-    it('Should be able to submit a feedback', () => {
+    it('Should be able to submit a feedback', async () => {
         const submitFeedback = new SubmitFeedbackUseCase(
             {create: async () => {}},
             {sendMail: async () => {}}
         );
 
-        expect(submitFeedback.execute({
+        await expect(submitFeedback.execute({
             type: 'BUG',
             comment: 'TESTE',
             screenshot: 'test.png'
