@@ -5,16 +5,19 @@ import { Copyright } from '../Copyright';
 
 interface SuccessProps {
   onFeedbackRestart: () => void;
-}
+};
 
 export function Success({ onFeedbackRestart }: SuccessProps) {
   return (
     <View style={styles.container}>
       <Image source={successImage} style={styles.image} />
 
-      <Text style={styles.title}>Thank you for the feedback!</Text>
+      <Text style={styles.title}>Agradecemos o feedback!</Text>
 
-      <TouchableOpacity style={styles.button} onPress={onFeedbackRestart}>
+      <TouchableOpacity 
+        style={styles.button} 
+        onPress={onFeedbackRestart}
+      >
         <Text style={styles.buttonTitle}>Send another</Text>
       </TouchableOpacity>
 

@@ -11,3 +11,11 @@ yarn add react-native-iphone-x-helper
 
 expo install react-native-reanimated react-native-gesture-handler
 expo install @gorhom/bottom-sheet^4
+
+expo install react-native-view-shot
+
+yarn add axios
+yarn add @types/axios
+
+expo install expo-file-system
+

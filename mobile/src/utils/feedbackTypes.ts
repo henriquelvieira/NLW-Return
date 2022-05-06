@@ -1,3 +1,5 @@
+export type FeedbackTypes = keyof typeof feedbackTypes;
+
 export const feedbackTypes = {
   'BUG': {
     title: 'Problema',
