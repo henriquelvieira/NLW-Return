@@ -44,3 +44,4 @@ npx jest --init
 npm i -D jest @swc/jest
 
 --Ajustar o arquivo jest.config.ts p/ utilizar o SWF
+
