@@ -28,7 +28,6 @@ export const feedbackTypes = {
             source: thoughtImageUrl,
             alt: 'Imagem de um balão de pensamento',
         }
-
     }
 };
 
