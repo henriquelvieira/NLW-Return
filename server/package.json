@@ -6,6 +6,8 @@
   "scripts": {
     "test": "jest",
     "dev": "ts-node-dev src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "prisma:dev:migrations": "npx prisma migrate dev",
     "prisma:studio": "npx prisma studio"
   },
