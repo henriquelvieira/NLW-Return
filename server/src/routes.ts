@@ -6,6 +6,10 @@ import { NodemailerMailAdapter } from './adapters/nodemailer/nodemailer-mail-ada
 
 export const routes = express.Router();
 
+routes.get('/', () => {
+    return 'Hello World!';
+});
+
 routes.post('/feedbacks', async (req, res) => {
     const { type, comment, screenshot } = req.body;
 
