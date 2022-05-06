@@ -12,22 +12,25 @@ import { ArrowLeft } from 'phosphor-react-native';
 import { FeedbackType   } from '../Widget';
 import { ScreenshotButton } from '../ScreenShotButton';
 import { feedbackTypes } from '../../utils/feedbackTypes';
+import { Button } from '../Button';
 
 import { theme } from '../../theme';
 import { styles } from './styles';
 
-interface Props {
+interface FormProps {
   feedbackType: FeedbackType;
+  onFeedbackCancel: () => void;
+  onFeedbackSent: () => void;
 };
 
 
-export function Form({ feedbackType }: Props) {
+export function Form({ feedbackType, onFeedbackCancel, onFeedbackSent  }: FormProps) {
   const feedbackTypeInfo = feedbackTypes[feedbackType];
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={onFeedbackCancel}>
           <ArrowLeft 
             size={24}
             weight='bold'
@@ -54,6 +57,7 @@ export function Form({ feedbackType }: Props) {
           onRemoveScreenshot={()=> {}}
           screenshot=''        
         />
+        <Button isLoading={false} />
       </View>
     
     </View>

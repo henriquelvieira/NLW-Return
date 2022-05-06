@@ -41,6 +41,8 @@ function Widget() {
       >
         <Form
           feedbackType='BUG'
+          onFeedbackCancel={() => {}}
+          onFeedbackSent={() => {}}
         />
 
       </BottomSheet>

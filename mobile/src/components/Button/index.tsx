@@ -9,7 +9,7 @@ import {
   
   interface ButtonProps extends TouchableOpacityProps {
     isLoading?: boolean;
-  }
+  };
   
   export function Button({ isLoading, ...rest }: ButtonProps) {
     return (
