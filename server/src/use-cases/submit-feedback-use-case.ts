@@ -1,5 +1,5 @@
 import { MailAdapter } from "../adapters/mail-adapter";
-import { FeedbackRepository } from "../repositories/feedbacks-repository";
+import { FeedbackRepository, FeedbackReturnData } from "../repositories/feedbacks-repository";
 
 interface SubmitFeedbackUseCaseRequest {
     type: string;
@@ -14,8 +14,8 @@ export class SubmitFeedbackUseCase {
         private mailAdapter: MailAdapter
     ) {}
 
-    public async execute(request: SubmitFeedbackUseCaseRequest) {
-        const { type, comment, screenshot } = request;
+    public async execute(request: SubmitFeedbackUseCaseRequest): Promise<FeedbackReturnData | undefined> {
+        const { type, comment, screenshot } = request; //Get data from request
 
         if (!type) {
             throw new Error('Type is required.');
@@ -29,11 +29,11 @@ export class SubmitFeedbackUseCase {
             throw new Error('Invalid screenshot format');
         };
 
-        this.repository.create({
+        const feedbackReturn = this.repository.create({
             type, 
             comment, 
             screenshot
-        });
+        }); //Save registry in database
 
         await this.mailAdapter.sendMail({
             subject: 'Novo feedback',
@@ -41,10 +41,12 @@ export class SubmitFeedbackUseCase {
                 '<div style="font-family: sans-serif; font-size:16px; color: #111;">',
                 `<p><b>Tipo do feedback</b>: ${type}</p>`,
                 `<p><b>Comentário</b>: ${comment}</p>`,
-                screenshot ? `<img src="${screenshot}" >` : '',
+                screenshot ? `<br /><img src="${screenshot}" >` : '',
                 '</div>'
             ].join('\n')
-        });
+        }); //Send email
+
+        return feedbackReturn;       
 
     };
 };

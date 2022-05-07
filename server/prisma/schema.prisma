@@ -10,16 +10,12 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// datasource db {
-//   provider = "sqlite"
-//   url      = env("DATABASE_URL")
-// }
-
 model Feedback {
-  id         String  @id @default(uuid())
+  id         String   @id @default(uuid())
   type       String
   comment    String
   screenshot String?
+  createdAt  DateTime @default(now())
 
   @@map("feedbacks")
 }
