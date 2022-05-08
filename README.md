@@ -22,13 +22,23 @@
 
 ## 🚀 Como rodar o projeto / Running the project**
 
+Clone o projeto e acesso o diretório.
+
+```bash
+$ git clone https://github.com/henriquelvieira/NLW-Return.git
+$ cd NLW-Return
+```
+
 - Front-end na pasta ( Run the frontend on the folder ) `/web` com ( with ) 
+
 ```npm run dev```
 
 - Back-end na pasta ( Run the frontend on the folder ) `/server` com ( with ) 
+
 ```npm run dev```
 
 - Mobile na pasta ( Run the mobile on the folder ) `/mobile` com ( with ) 
+
 ```expo start```
 
 ----------------------------------------------------------------------------------------------------------
