@@ -4,7 +4,7 @@
 ![](cover.svg)
 
 
-⚙️ **Tecnologias utilizadas / Used Technologies**
+** 🧪 Tecnologias utilizadas / Used Technologies**
  
 - [Typescript](https://www.typescriptlang.org/)
 - [ReactJS](https://reactjs.org/)
@@ -20,19 +20,16 @@
 
 ----------------------------------------------------------------------------------------------------------
 
-🚀 **Como rodar o projeto / Running the project**
+## 🚀 Como rodar o projeto / Running the project**
 
 - Front-end na pasta ( Run the frontend on the folder ) `/web` com ( with ) 
-
-`npm run dev`
+```npm run dev```
 
 - Back-end na pasta ( Run the frontend on the folder ) `/server` com ( with ) 
-
-`npm run dev`
+```npm run dev```
 
 - Mobile na pasta ( Run the mobile on the folder ) `/mobile` com ( with ) 
-
-`expo start`
+```expo start```
 
 ----------------------------------------------------------------------------------------------------------
 
