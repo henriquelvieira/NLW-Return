@@ -14,8 +14,8 @@ export class SubmitFeedbackUseCase {
         private mailAdapter: MailAdapter
     ) {}
 
-    public async execute(request: SubmitFeedbackUseCaseRequest): Promise<FeedbackReturnData | undefined> {
-        const { type, comment, screenshot } = request; //Get data from request
+    public async execute(req: SubmitFeedbackUseCaseRequest): Promise<FeedbackReturnData | undefined> {
+        const { type, comment, screenshot } = req; //Get data from request
 
         if (!type) {
             throw new Error('Type is required.');
@@ -46,7 +46,7 @@ export class SubmitFeedbackUseCase {
             ].join('\n')
         }); //Send email
 
-        return feedbackReturn;       
+        return feedbackReturn;               
 
     };
 };
