@@ -22,11 +22,17 @@
 
 🚀 **Como rodar o projeto / Running the project**
 
-Rode o front-end na pasta ( Run the frontend on the folder ) `/web` com ( with ) `npm run dev`
+- Front-end na pasta ( Run the frontend on the folder ) `/web` com ( with ) 
 
-Rode o back-end na pasta ( Run the frontend on the folder ) `/server` com ( with ) `npm run dev`
+`npm run dev`
 
-Rode o mobile na pasta ( Run the mobile on the folder ) `/mobile` com ( with ) `expo start`
+- Back-end na pasta ( Run the frontend on the folder ) `/server` com ( with ) 
+
+`npm run dev`
+
+- Mobile na pasta ( Run the mobile on the folder ) `/mobile` com ( with ) 
+
+`expo start`
 
 ----------------------------------------------------------------------------------------------------------
 
