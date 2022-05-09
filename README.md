@@ -3,7 +3,8 @@ Projeto desenvolvido durante a NLW Return da [Rocketseat](https://www.rocketseat
 
 ![Bower](https://img.shields.io/bower/l/boot)
 
-![](cover.svg)
+![](cover.png)
+![](NLW_Return-Diagram.png)
 
 
 ** 🧪 Tecnologias utilizadas / Used Technologies**
@@ -33,15 +34,24 @@ $ cd NLW-Return
 
 - Front-end na pasta ( Run the frontend on the folder ) `/web` com ( with ) 
 
-```npm run dev```
+```
+npm install
+npm run dev
+```
 
 - Back-end na pasta ( Run the frontend on the folder ) `/server` com ( with ) 
 
-```npm run dev```
+```
+npm install
+npm run dev
+```
 
 - Mobile na pasta ( Run the mobile on the folder ) `/mobile` com ( with ) 
 
-```expo start```
+```
+npm install
+expo start
+```
 
 ----------------------------------------------------------------------------------------------------------
 
