@@ -1,4 +1,6 @@
 # Next Level Week - Feedback Widget 
+Projeto desenvolvido durante a NLW Return da [Rocketseat](https://www.rocketseat.com.br/)
+
 ![Bower](https://img.shields.io/bower/l/boot)
 
 ![](cover.svg)
